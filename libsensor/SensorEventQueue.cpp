@@ -31,4 +31,8 @@ status_t SensorEventQueue::setEventRate(Sensor const* sensor, nsecs_t ns) const 
     return ASensorEventQueue_setEventRate(mASensorEventQueue, sensor->getASensorRef(), ns);
 }
 
+status_t SensorEventQueue::getFd() const {
+    return OK;
+}
+
 }  // namespace android

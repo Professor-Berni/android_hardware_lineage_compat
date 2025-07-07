@@ -30,6 +30,8 @@ class SensorEventQueue : public RefBase {
     status_t disableSensor(Sensor const* sensor) const;
     status_t setEventRate(Sensor const* sensor, nsecs_t ns) const;
 
+    status_t getFd() const;
+
   private:
     ASensorEventQueue* mASensorEventQueue;
 };
