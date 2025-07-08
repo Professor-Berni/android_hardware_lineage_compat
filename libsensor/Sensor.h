@@ -33,8 +33,8 @@ class Sensor {
     int32_t getMinDelay() const;
     /*
     nsecs_t getMinDelayNs() const;
-    int32_t getVersion() const;
     */
+    int32_t getVersion() const;
     uint32_t getFifoReservedEventCount() const;
     uint32_t getFifoMaxEventCount() const;
     const String8& getStringType() const;
@@ -68,6 +68,7 @@ class Sensor {
     uint32_t mFifoReservedEventCount;
     uint32_t mFifoMaxEventCount;
     String8 mStringType;
+    int32_t mVersion;
 };
 
 }  // namespace android

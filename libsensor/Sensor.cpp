@@ -60,4 +60,8 @@ ASensorRef Sensor::getASensorRef() const {
     return mASensorRef;
 }
 
+int32_t Sensor::getVersion() const {
+    return mVersion;
+}
+
 }  // namespace android
