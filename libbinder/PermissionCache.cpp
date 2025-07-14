@@ -6,6 +6,8 @@
 
 #include <utils/String16.h>
 
+extern "C" void  _ZN7android15PermissionCacheC1Ev() {}
+
 namespace android {
 namespace PermissionCache {
 
